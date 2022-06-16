@@ -19,6 +19,7 @@ window.Vue = require('vue').default;
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 Vue.component('app-component', require('./components/appContainerComponent.vue').default);
 Vue.component('formContainer-component', require('./components/containers/formContainerComponent.vue').default);
+Vue.component('dynamicButton-component', require('./components/shared/dynamicButton/dynamicButtonComponent.vue').default);
 Vue.component('form-component', require('./components/form/formComponent.vue').default);
 Vue.component('dynamicForm-component', require('./components/dynamicForms/dynamicFormComponent.vue').default);
 Vue.component('dynamicInput-component', require('./components/shared/dynamicInput/dynamicInputComponent.vue').default);

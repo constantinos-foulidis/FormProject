@@ -7,13 +7,7 @@
                     Sie besitzen bereits ein Kundenkonto? Melden Sie sich hier an und wir hinterlegen automatisch Ihre
                     Daten.
                 </h1>
-                <button
-                    class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-2 rounded inline-flex items-center">
-                    <span class="material-symbols-outlined">
-                        lock
-                    </span>
-                    <span>Kundenanmeldung</span>
-                </button>
+              <dynamicButton-component :title="Kundenanmeldung" :icon="lock"></dynamicButton-component>
             </div>
             <!-- <div class="flex justify-center mb-12">
                 <form-component :user ="user" ></form-component>
