@@ -17,9 +17,16 @@ window.Vue = require('vue').default;
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
-
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('app-component', require('./components/appContainerComponent.vue').default);
+Vue.component('formContainer-component', require('./components/containers/formContainerComponent.vue').default);
 Vue.component('form-component', require('./components/form/formComponent.vue').default);
+Vue.component('dynamicForm-component', require('./components/dynamicForms/dynamicFormComponent.vue').default);
+Vue.component('dynamicInput-component', require('./components/shared/dynamicInput/dynamicInputComponent.vue').default);
+Vue.component('dynamicOption-component', require('./components/shared/dynamicOption/dynamicOptionComponent.vue').default);
+Vue.component('headerForm-component', require('./components/shared/headerForm/headerFormComponent.vue').default);
+
+
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
